@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batch Color Brightness Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Batch Color Brightness Tool</h1>
+
+<textarea id="input" placeholder="One HEX color per line"></textarea>
+
+<div class="controls">
+
+<select id="mode">
+<option value="lighten">Lighten</option>
+<option value="darken">Darken</option>
+</select>
+
+<input
+type="range"
+id="amount"
+min="0"
+max="100"
+value="20">
+
+<span id="amountLabel">20%</span>
+
+<button id="convert">Convert</button>
+
+</div>
+
+<textarea id="output" readonly></textarea>
+
+<button id="copy">Copy Output</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
